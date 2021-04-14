@@ -4,3 +4,52 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
+body{
+    background-color:#557c8a;
+    color:white;
+}
+/* layout */
+.app{
+    max-width: 500px;
+    margin:0 auto;
+    padding: 20px;
+}
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+/* new item input */
+.add-todo{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border:none;
+    outline: none;
+    transition: background-color, .3s;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.4);
+}
+.add-todo:focus,
+.add-todo:hover{
+    background-color: white;
+}
+/* todo list */
+.todos li{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+.todos li:last-child{
+    border-bottom: none;
+}
+.todos i{
+    cursor: pointer;
+    opacity: .2;
+    transition: opacity, 0.4s;
+}
+.todos i:hover{
+    opacity: 1;
+}

@@ -9,6 +9,8 @@
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
     <!-- link jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -17,6 +19,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="app">
+        <header>
+            <h1>
+                My ToDo List
+            </h1>
+        </header>
+        <main>
+            <input
+             type="text"
+             class="add-todo"
+             placeholder="Inserisci un elemento.">
+             <ul class="todos">
+                 <!-- statico per il style -->
+                 <li>
+                     <span class="text">test test test</span>
+                     <i class="fas fa-trash-alt"></i>
+                 </li>
+                 <li>
+                    <span class="text">test test test</span>
+                    <i class="fas fa-trash-alt"></i>
+                </li>
+             </ul>
+        </main>
+    </div>
 </body>
 </html>
