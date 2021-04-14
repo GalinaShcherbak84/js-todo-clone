@@ -35,7 +35,7 @@ $(document).ready(function(){
         // template
         var item = template.clone();
         item.find('.text').text(todo.text);
-        // aggiungere la clesse completed
+        // aggiungere la classe completed
         if(todo.completed == true){
             item.find('.text').addClass('completed');
         }
